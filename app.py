@@ -21,27 +21,27 @@ else :
 """ for item in car_inventory:
     print(item * 3) """
 
-def 둘레(option: int) :
+def perimeter(option: int) :
     width = int(input("가로 값 : "))
     length = int(input("세로 값: "))
     return (width + length) * 2 
 
-def 넓이(option: int) :
+def width(option: int) :
     width = int(input("가로 값 : "))
     length = int(input("세로 값: "))
     return (width * length) 
 
-def 선택(option: int) :
+def choice(option: int) :
     result = 0
 
     if option == 1:
-        result = 둘레(option)
+        result = perimeter(option)
         return result
     elif option == 2:
-        result = 넓이(option)
+        result = width(option)
         return result
     else :
         return -1;
 
-option = 선택(int(input("옵션을 선택하세요 1-> 둘레 2-> 넓이 : ")))
-print(option)
+option_val = choice(int(input("옵션을 선택하세요 1-> 둘레 2-> 넓이 : ")))
+print(option_val)
