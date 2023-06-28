@@ -10,7 +10,7 @@ car_info2 = {
 }
 
 inventory = 10
-car_inventory = ['k5','bmw','morning','spark']
+car_inventory = ['k5','bmw','morning','spark','starrex','tico']
 
 #item in list
 """ if 'k5' in car_inventory :
