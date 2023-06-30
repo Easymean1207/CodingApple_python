@@ -19,30 +19,30 @@ else :
     print(item * 3) """
 
 
-def cal_perimeter(option: int):
+def calPerimeter(option: int):
     width = int(input("가로 값 : "))
     length = int(input("세로 값: "))
     return (width + length) * 2
 
 
-def cal_width(option: int):
+def calWidth(option: int):
     width = int(input("가로 값 : "))
     length = int(input("세로 값: "))
     return width * length
 
 
-def do_choice(option: int):
+def doChoice(option: int):
     result = 0
 
     if option == 1:
-        result = cal_perimeter(option)
+        result = calPerimeter(option)
         return result
     elif option == 2:
-        result = cal_width(option)
+        result = calWidth(option)
         return result
     else:
         return -1
 
 
-option_val = do_choice(int(input("옵션을 선택하세요 1-> 둘레 2-> 넓이 : ")))
+option_val = doChoice(int(input("옵션을 선택하세요 1-> 둘레 2-> 넓이 : ")))
 print(option_val)
